@@ -4,8 +4,11 @@ A simple player google drive video with electron
 ## Clone the repo
 `git clone https://github.com/herudi/electron-google-drive-video.git`
 
-## Directing path and Install the package
-`cd electron-google-drive-video && npm install`
+## Open the path
+`cd electron-google-drive-video`
+
+## Install the package
+`npm install`
 
 ## Run app
 `npm start`
