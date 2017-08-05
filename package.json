@@ -1,0 +1,17 @@
+{
+  "name": "electron-google-drive-video",
+  "version": "1.0.0",
+  "description": "A simple google drive video player streaming",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "Herudi",
+  "license": "GNU",
+  "dependencies": {
+    "electron": "~1.6.2",
+    "request": "^2.81.0",
+    "string": "^3.3.3"
+  }
+}

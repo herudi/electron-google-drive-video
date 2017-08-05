@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>google drive player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" onload="window.$ = window.jQuery = module.exports;"></script>    
+  </head>
+  <body>
+    <div id="divVideo">
+        <div class="video-container">
+          <video id='video' controls class="video-js vjs-default-skin vjs-big-play-centered"></video>
+        </div>
+        <div style="position:absolute;padding:10px">
+          <button id="btnBack" style="height: 40px;margin-top: -6px;margin-right: -5px;"  class="w3-button w3-blue"> << </button>
+          <select style="margin-top:0px;background-color: #1d1d1d;padding-left: 10px;" id="mySelect"></select>
+        </div>
+    </div>
+    <div>
+      <div class="w3-container w3-large">
+        <div id="container" style="text-align:center;">
+          <p style="font-size:26px;font-weight:bold;color:#6d6d6d;margin-bottom:0px">Simple player google drive</p>
+          <p style="font-size:12px;color:#6d6d6d;margin-top:2px">No server, no proxi, but pure javascript</p>
+          <div style="padding-left:300px;padding-right:300px">
+            <input id="txtVideo" style="text-align:center;" class="w3-input" type="text" placeholder="Input here => https://drive.google.com/file/d/{doc-id}/view">
+          </div>
+          <br>
+          <button id="btnVideo" class="w3-button w3-green">Get Play Video</button>
+        </div>
+        <div id="spin" class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script>
+    require('./renderer.js');
+  </script>
+</html>
